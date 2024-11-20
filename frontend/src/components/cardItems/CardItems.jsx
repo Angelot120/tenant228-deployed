@@ -1,5 +1,5 @@
 import React from "react";
-import DimensImg from "../../assets/icons/fit_width_24.png";
+import DimensImg from "/assets/icons/fit_width_24.png";
 import { Button, PinkButton } from "../button/Button";
 import api from "../../api";
 import { useNavigate } from "react-router-dom";
