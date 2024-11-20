@@ -1,0 +1,44 @@
+.not-fond-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+
+.not-fond-left-items {
+  text-align: center;
+}
+
+.not-fond-left-items h2 {
+  font-family: righteous;
+}
+
+.not-fond-left-items-oops {
+  height: 20vh;
+}
+
+.not-fond-right-items {
+  height: 100vh;
+}
+
+.not-fond-back-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.not-fond-back-items a {
+  display: flex;
+  align-items: center;
+  color: var(--color1);
+  text-decoration: none;
+}
+
+.not-fond-back-items img {
+  height: 50px;
+}
+
+.not-fond-right-items img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

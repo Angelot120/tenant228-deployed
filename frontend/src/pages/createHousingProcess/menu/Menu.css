@@ -1,0 +1,29 @@
+.second-menu-bar {
+  padding: 0 80px;
+  border-bottom: 1px black solid;
+  position: fixed;
+  width: 88%;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.second-menu-bar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step1 {
+  font-family: baloo;
+}
+
+.steps-back {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .second-menu-bar {
+    padding: 0 20px;
+  }
+}

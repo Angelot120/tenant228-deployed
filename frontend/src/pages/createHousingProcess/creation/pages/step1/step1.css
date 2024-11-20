@@ -1,0 +1,202 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fcb40a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.housing-type {
+  padding: 40px 80px;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio-input {
+  display: none;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category.selected {
+  border-color: var(--color1);
+}
+
+.category-label {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+/* 
+.category-label {
+  display: block;
+} */
+
+.category-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+/* Step 1.2Housing type */
+
+.housing-type-available,
+.housing-type-available form {
+  padding: 0 20px;
+  justify-content: center;
+  display: flex;
+}
+
+/* 
+.housing-type-available {
+  padding: 0 10px;
+  justify-content: center;
+  display: flex;
+} */
+
+/* Step 1.3 */
+
+.housing-title-container {
+  text-align: center;
+  margin: 80px;
+}
+
+.housing-title-container p {
+  font-family: quicksand-bold;
+}
+
+/* Step 1.4 */
+
+.create-housing-address-session {
+  text-align: center;
+
+  margin: 0 100px;
+}
+
+.full-adress-container {
+  text-align: left;
+}
+
+/* Step 1.5 */
+
+.housing-plan-select {
+  margin: 80px;
+  text-align: center;
+}
+
+.housing-plan-select-item {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+.housing-plan-select p {
+  font-family: quicksand-bold;
+}
+
+/* Step 1.6 */
+
+.housing-infos-plus {
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.count-btn {
+  border-radius: 50%;
+  border: 0.5px black solid;
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+
+.count-btn-items {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.count-btn-items label {
+  margin: 8px;
+}
+
+.switch-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 620px) {
+  .housing-title-container {
+    margin: 0 30px;
+  }
+
+  .create-housing-address-session {
+    margin: 0 20px;
+  }
+
+  .housing-plan-select {
+    margin: 20px;
+  }
+
+  .housing-infos-plus {
+    margin: 20px;
+  }
+
+  .housing-type {
+    padding: 10px 20px;
+  }
+}

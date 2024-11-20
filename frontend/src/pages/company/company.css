@@ -1,0 +1,99 @@
+.banner-items {
+  padding: 30px;
+}
+
+.company-banner {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  margin-bottom: -50px;
+  border-radius: 15px;
+}
+
+.company-logo {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+.company-logo-items {
+  display: flex;
+  /* background-color: blue; */
+}
+
+.company-logo-items div {
+  margin-left: 8px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.company-page-categories div {
+  margin: 0 3px;
+}
+
+.company-category-card {
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 0px 8px;
+  align-items: center;
+}
+
+.company-category-card img {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.company-page-housings h1 {
+  text-align: center;
+}
+
+/* Contact session */
+.company-contact-session{
+  margin: 0 30px;
+}
+
+.company-contact-all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* .company-contact-left {
+  padding: 30px;
+} */
+
+.company-contact-right {
+  padding: 30px;
+}
+
+.test-img {
+  width: 100%;
+}
+
+.company-subscribe-session {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .company-logo-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .company-contact-all {
+    grid-template-columns: 1fr;
+  }
+}

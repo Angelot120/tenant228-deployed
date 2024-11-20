@@ -1,0 +1,31 @@
+.float-input {
+  position: relative;
+  margin: 20px 0;
+}
+
+.float-input input {
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, padding 0.3s;
+}
+
+.float-input label {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  font-size: 16px;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.float-input input:focus {
+  padding-top: 20px;
+}
+
+.float-input input:focus + label,
+.float-input input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+}

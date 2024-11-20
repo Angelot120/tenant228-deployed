@@ -1,0 +1,13 @@
+.login-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.form-conatainer{
+    padding: 0 30px;
+    text-align: left;
+    justify-content: center;
+}

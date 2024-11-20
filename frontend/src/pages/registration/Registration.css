@@ -1,0 +1,38 @@
+.registration-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+  align-items: center;
+}
+
+.registration-container h1 {
+  font-family: righteous;
+}
+
+.registration-left-items {
+  margin: 0 50px;
+}
+
+.registration-left-items a {
+  color: #0000ffb0;
+  text-decoration: none;
+}
+
+.registration-terms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.termes {
+  color: #0000ffb0;
+  text-decoration: none;
+}
+
+.registration-all-input {
+  text-align: left;
+}
+
+.registration-right-img {
+  width: 100%;
+}

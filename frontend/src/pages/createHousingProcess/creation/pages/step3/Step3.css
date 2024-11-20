@@ -1,0 +1,171 @@
+.housing-price-container {
+  padding: 80px;
+  text-align: center;
+}
+
+.housing-price-container .form {
+  padding: 0 100px;
+}
+
+/* Step 3.2 */
+
+.company-container {
+  margin: 80px;
+}
+
+.company-container-first-items {
+  text-align: center;
+}
+
+.all-options {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.company-kind {
+  display: flex;
+  justify-content: center;
+}
+
+/* Finish */
+
+.process-finish-full-banner {
+  margin: 80px;
+}
+
+.process-finish-top-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process-finish-title {
+  font-family: quicksand-bold;
+}
+
+.process-finish-banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+
+/* .process-finish-banner-left-items{
+    padding: 20px;
+} */
+
+.process-finish-banner-img {
+  width: 100%;
+  border-radius: 80px 0 80px 0;
+  object-fit: cover;
+  height: 80vh;
+}
+
+.process-finish-banner-rigth-items {
+  padding-left: 20px;
+}
+
+.process-finish-banner-ic {
+  height: 30px;
+}
+
+.process-finish-banner span {
+  display: flex;
+  align-items: center;
+}
+
+.process-finish-banner span p {
+  margin-left: 20px;
+}
+
+@media (max-width: 620px) {
+  .process-finish-top-items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .process-finish-full-banner {
+    margin: 20px;
+  }
+}
+
+/* Preview */
+
+.preview {
+  margin: 0 80px;
+}
+
+.priview-adress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priview-adress div {
+  display: flex;
+  align-items: center;
+}
+
+.priview-adress p {
+  margin: 0;
+}
+
+.preview-images-container {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 10px;
+}
+
+.preview-room-img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.preview-room-img {
+  height: 300px;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.preveiw-check-items {
+  display: flex;
+  align-items: center;
+}
+
+.preveiw-check-items p {
+  margin: 0;
+}
+
+.preveiw-check-items img {
+  height: 30px;
+}
+
+@media (max-width: 620px) {
+  .preview {
+    margin: 0 20px;
+  }
+
+  .priview-adress {
+    display: block;
+  }
+
+  .preview-images-container {
+    grid-template-columns: 1fr;
+  }
+
+  .housing-price-container {
+    padding: 30px;
+  }
+  .housing-price-container .form {
+    padding: 0 10px;
+  }
+
+  .company-container {
+    margin: 10px 5px;
+  }
+
+  .all-options {
+    padding: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.button {
+  background-color: var(--color1);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: baloo;
+}
+
+.button:hover {
+  color: var(--color1);
+  background-color: var(--white);
+  transition: 0.5s;
+}
+
+.dialog-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pink-button {
+  background-color: var(--color3);
+}
+
+.pink-button:hover {
+  color: var(--color3);
+}
+
+.button-outlined {
+  color: var(--color1);
+  background-color: #ffffff;
+  border: var(--color1) solid 1px;
+}
+
+.button-outlined:hover {
+  color: #ffffff;
+  background-color: var(--color1);
+}

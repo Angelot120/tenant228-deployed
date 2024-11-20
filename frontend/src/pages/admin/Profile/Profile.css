@@ -1,0 +1,42 @@
+.admin-profile-container {
+  margin: 40px;
+}
+
+.admin-profile-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.profile-menu-left-item {
+  color: black;
+  text-decoration: none;
+}
+
+.profile-menu-fight-item {
+  color: var(--color3);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.admin-profile-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cni-tof-img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.cni-tof-img-container img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}

@@ -1,0 +1,84 @@
+.dialogue {
+  width: 60%;
+  border-radius: 20px;
+  border: none;
+  min-height: 200px;
+}
+
+.dialog-close-btn-container {
+  text-align: right;
+}
+
+.close-dialog-btn {
+  border: none;
+  /* background-color: var(--white); */
+  padding: 5px;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-dialog-btn img {
+  height: 30px;
+}
+
+/* Enterprises */
+
+.company-edit-btn{
+  color: blue;
+  display: flex;
+  cursor: pointer;
+}
+
+.company-edit-btn p{
+  margin: 0;
+}
+
+.company-edit-btn img{
+  height: 20px;
+}
+
+.comany-banner-img {
+  object-fit: cover;
+  height: 200px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.comany-logo {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+
+
+.admin-mofify-company{
+  margin: 0 40px;
+}
+
+.admin-description{
+  width: 100%;
+  border: var(--color1) 1px solid;
+  border-radius: 5px;
+}
+
+.admin-create-category{
+  margin: 0 40px;
+  /* text-align: center; */
+}
+
+.admin-create-category-btn{
+  text-align: center;
+}
+
+.logout-btn-container{
+  text-align: center;
+}
+
+.logout-btn-container {
+  text-align: center;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

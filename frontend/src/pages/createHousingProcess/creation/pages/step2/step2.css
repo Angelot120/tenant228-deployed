@@ -1,0 +1,291 @@
+textarea {
+  resize: none;
+}
+
+.dropzone {
+  border: 2px dashed #fcb40a;
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropzone.drag-active {
+  border-color: #28a745;
+  background-color: #e9ffe5;
+}
+
+.dz-message {
+  font-size: 1.5em;
+}
+
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.dz-preview {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 15px;
+  max-width: 200px; /* Ajustez selon vos besoins */
+}
+
+.dz-preview img {
+  width: 100%;
+  height: auto;
+}
+
+.dz-preview {
+  position: relative;
+}
+
+.dz-preview button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.dz-preview button:hover {
+  background-color: darkred;
+}
+
+.step2-start {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  margin: 50px;
+}
+
+.step2-start h2 {
+  font-family: baloo;
+}
+
+.step2-start p {
+  font-family: quicksand-bold;
+  font-size: 2rem;
+}
+
+.step2-start img {
+  width: 90%;
+  border-radius: 0 50px 0 50px;
+  object-fit: cover;
+  height: 70vh;
+}
+
+/* Progress bar */
+
+.steps-progress-container {
+  margin: 0 20px;
+}
+
+.step-counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps-progress-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px; 
+}
+
+.first-step-progress,
+.second-step-progress,
+.tird-step-progress {
+  align-items: center;
+}
+
+.progress-bar {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+}
+
+.step-number {
+  padding: 8px 12px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+.step-number {
+  margin: 5px;
+}
+.step-number p {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.current-step div {
+  background-color: var(--color1) !important;
+}
+
+/* Step 2.1 */
+
+.housing-descrition-session {
+  margin: 80px;
+}
+@media (max-width: 620px) {
+  .housing-descrition-session {
+    margin: 20px;
+  }
+}
+
+.housing-descrition-session textarea {
+  width: 100%;
+}
+
+.descriptive-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.descriptive-option {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input {
+  display: none;
+}
+
+.descriptive-option:hover {
+  transform: scale(1.05);
+}
+
+.descriptive-option.selected {
+  border-color: var(--color1);
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+}
+
+.descriptive-option-label {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+/* Step 2.2 */
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.option {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.check-input {
+  display: none;
+}
+
+.option:hover {
+  transform: scale(1.05);
+}
+
+.option span {
+  display: flex;
+  align-items: center;
+}
+
+.option.selected {
+  border-color: var(--color1);
+}
+
+.option-cont {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.option-img {
+  height: 40px;
+}
+
+.options-conatainer {
+  margin: 0 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.option-margin {
+  margin: 0 80px;
+}
+
+@media (max-width: 600px) {
+  .options-conatainer {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Step 2.3 */
+
+.housing-images-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Step 2.4 */
+
+.locations-info {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.locations-info textarea {
+  width: 100%;
+}
+
+.add-new-service {
+  text-align: right;
+}
+
+.add-new-service button {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* Step 2.5 */
+
+.room-img-session {
+  margin: 80px;
+}
+
+@media (max-width: 620px) {
+  .room-img-session {
+    margin: 20px;
+  }
+}

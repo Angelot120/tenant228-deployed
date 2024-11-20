@@ -1,0 +1,173 @@
+/* Loading   */
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f5c32c;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Styles pour le squelette */
+
+.loading-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.skeleton_container {
+  width: 100%;
+  /* background-color: aqua; */
+  /* padding: 20px; */
+}
+
+.skeleton {
+  background-color: #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -150px;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(to right, #ddd 0%, #eee 50%, #ddd 100%);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.skeleton.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.skeleton.skeleton-text {
+  height: 18px;
+  width: 200px;
+}
+
+.skeleton.skeleton-text.long {
+  width: 90%;
+  margin: auto;
+}
+
+.skeleton.skeleton-text.like {
+  height: 18px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.big_img {
+  height: 200px !important;
+  width: 100%;
+  /* background-color: red; */
+}
+
+/* Details loading */
+
+.skeleton-container {
+  margin: 40px;
+}
+
+.skeleton-details-adress {
+  height: 20px;
+  width: 30%;
+  border-radius: 8px;
+}
+
+.skeleton-details-title {
+  height: 20px;
+  width: 60%;
+}
+
+.skeleton-details-images {
+  height: 50vh;
+}
+
+.skeleton-details-all-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.skeleton-details-card {
+  height: 60px;
+  width: 200px;
+}
+
+.skeleton-details-adress-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 912px) {
+  .skeleton-details-all-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+/* Company Loading */
+
+.company-skeleton-banner {
+  height: 200px;
+}
+
+.company-skeleton-item {
+  margin: 0 30%;
+}
