@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import bannerImg from "../../assets/Icons/banner-img.jpg";
 import bannerLogo from "../../assets/Hotel-logo.jpg";
-import catIcon from "../../assets/icons/profile_user.svg";
 import "./company.css";
 import api from "../../api";
 import HousingCard from "../../components/HousingCard/HousingCard";
