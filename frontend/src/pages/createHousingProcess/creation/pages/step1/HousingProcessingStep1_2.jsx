@@ -3,7 +3,7 @@ import HousingProcessingMenu from "../../../menu/HousingProcessingMenu";
 import { useLocation, useNavigate } from "react-router-dom";
 import { HousingProcessingStep1 } from "../../../menu/HousingProcessingSteps";
 import { toast, ToastContainer } from "react-toastify";
-import "./Step1.css";
+import "./step1.css";
 
 export default function HousingProcessingStep1_2() {
   const location = useLocation();
